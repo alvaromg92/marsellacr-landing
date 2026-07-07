@@ -5,7 +5,7 @@ function FeaturedProducts() {
 
   return (
 
-    <section className="featured">
+    <section className="featured" id="features">
 
       <div className="featured-title">
 

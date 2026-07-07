@@ -52,7 +52,7 @@ function Footer() {
         </a>
 
         <a
-            href="https://www.facebook.com/marsella.cr"
+            href="https://www.facebook.com/profile.php?id=100089205374440"
             target="_blank"
             rel="noreferrer"
         >

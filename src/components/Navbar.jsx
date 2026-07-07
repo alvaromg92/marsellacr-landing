@@ -1,36 +1,60 @@
+import { useState } from "react";
 import "../styles/Navbar.css";
 import { Link } from "react-router-dom";
-import logo from "../assets/logo/logo.png"; // Cambia el nombre si tu archivo se llama diferente
+import logo from "../assets/logo/logo.png";
 
 function Navbar() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const closeMenu = () => setMenuOpen(false);
+
   return (
     <header className="navbar">
       <div className="logo">
-        <Link to="/">
+        <Link to="/" onClick={closeMenu}>
           <img src={logo} alt="MarsellaCR Logo" />
         </Link>
       </div>
 
-      <nav>
+      <div
+        className={`hamburger ${menuOpen ? "active" : ""}`}
+        onClick={() => setMenuOpen(!menuOpen)}
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <nav className={menuOpen ? "nav active" : "nav"}>
         <ul className="nav-links">
           <li>
-            <Link to="/">Inicio</Link>
+            <Link to="/" onClick={closeMenu}>
+              Inicio
+            </Link>
           </li>
 
           <li>
-            <Link to="/gallery">Galería</Link>
+            <a href="#features" onClick={closeMenu}>
+              Destacados
+            </a>
           </li>
 
           <li>
-            <a href="#brands">Marcas</a>
+            <a href="#brands" onClick={closeMenu}>
+              Marcas
+            </a>
           </li>
 
           <li>
-            <a href="#reviews">Opiniones</a>
+            <a href="#reviews" onClick={closeMenu}>
+              Opiniones
+            </a>
           </li>
 
           <li>
-            <a href="#contact">Contacto</a>
+            <a href="#contact" onClick={closeMenu}>
+              Contacto
+            </a>
           </li>
         </ul>
       </nav>
