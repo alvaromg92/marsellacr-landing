@@ -1,0 +1,92 @@
+.hero {
+    min-height: calc(100vh - 90px);
+    background: #050505;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 90px 6% 40px;
+    overflow: hidden;
+    gap: 0;
+    display: flex;
+    align-items: center;    
+}
+
+.hero-content {
+    flex: 0 0 48%;
+    max-width: 620px;
+    z-index: 2; 
+}
+
+.hero-subtitle {
+    display: inline-block;
+    color: #FFD700;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: .9rem;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 4rem;
+    line-height: 1.05;
+    margin-bottom: 25px;    
+}
+
+.hero p {
+    color: #d6d6d6;
+    font-size: 1.15rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.btn-primary,
+.btn-secondary {
+    text-decoration: none;
+    padding: 16px 38px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.btn-primary {
+    background: #FFD700;
+    color: #000;
+}
+
+.btn-primary:hover {
+    background: #ffe44d;
+}
+
+.btn-secondary {
+    border: 2px solid #FFD700;
+    color: #FFD700;
+}
+
+.btn-secondary:hover {
+    background: #FFD700;
+    color: #000;
+}
+
+/* ---------- Imagen ---------- */
+
+.hero-image {
+    flex: 0 0 48%;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    overflow:hidden;   
+}
+
+.hero-image img {
+    width: 160%;
+    max-width: none;
+    height: 460px;
+    object-fit: contain;
+    transform: translateX(130px); 
+}

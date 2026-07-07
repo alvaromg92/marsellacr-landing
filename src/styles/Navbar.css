@@ -1,0 +1,54 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.navbar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding: 10px 8%;
+    background:rgba(0,0,0,.90);
+    backdrop-filter:blur(10px);
+    z-index:1000;
+}
+
+.logo a {
+    font-family: "Playfair Display", serif;
+    color: #FFD700;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:35px;
+}
+
+.nav-links a {
+    font-family: "Poppins", sans-serif;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color .3s ease;
+}
+
+.nav-links a:hover{
+    color:#FFD700;
+}
+
+.logo img {
+    height: 100px;
+    width: auto;
+    display: block;
+}
+
