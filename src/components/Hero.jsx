@@ -28,7 +28,7 @@ function Hero() {
           </Link>
 
           <a
-            href="https://wa.me/87195863"
+            href="https://wa.me/50687195863"
             target="_blank"
             rel="noreferrer"
             className="btn-secondary"
