@@ -23,9 +23,9 @@ function Hero() {
 
         <div className="hero-buttons">
 
-          <Link to="/gallery" className="btn-primary">
-            Ver Productos
-          </Link>
+          <a href="#features" className="btn-primary">
+          Ver Productos
+          </a>
 
           <a
             href="https://api.whatsapp.com/send?phone=50687195863"
