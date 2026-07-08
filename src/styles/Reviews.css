@@ -50,10 +50,13 @@
 }
 
 .review-card p {
-    color: #d6d6d6;
-    line-height: 1.8;
-    margin-bottom: 25px;
-    font-size: 1rem;
+    font-family:"Poppins",sans-serif;
+    font-size:1rem;
+    font-weight:300;
+    font-style:italic;
+    color:#c7c7c7;
+    line-height:1.8;
+    padding-bottom: 5px;
 }
 
 .review-card h4 {

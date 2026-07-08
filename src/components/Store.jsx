@@ -15,7 +15,7 @@ function Store() {
 
         <span>Nuestra tienda física</span>
 
-        <h2>Por que elegir productos Marsellacr</h2>
+        <h2>Por que elegir productos Marsellacr?</h2>
 
         <div className="store-features">
 
